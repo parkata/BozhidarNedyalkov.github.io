@@ -1,0 +1,201 @@
+html{
+  margin-top:25px;
+  background-color:#F6F6F6;
+}
+h1{
+  width:100%;
+  font-family:Palatino Linotype;
+  text-align: center;
+   text-decoration: underline;
+  text-decoration-color: green;
+ font-size:2.3em;
+}
+/*-----------Navigation*/
+header {
+  position: fixed;
+  top: 10;
+  right: 0;
+  color: black;
+  font-family: 'Exo 2', sans-serif;
+  font-size:1.3em;
+  height:10px;
+}
+#navbar {
+  background-color: blue;
+  color:white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius:30%;
+}
+#navbar:hover {
+   background-color: #FFF933;
+   color:black;
+}
+#navbar ul{
+  margin-top:15px;
+}
+.nav-button {
+  cursor: pointer;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.nav-items {
+  background-color: #FFF933;
+  border-radius:20%;
+  display: none;
+  position: absolute; 
+  top: 100%;
+  right: 0; 
+  z-index: 10;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-width: 100%; 
+  text-align: center; 
+}
+
+.nav-items li {
+  padding: 10px;
+}
+
+.nav-items li a {
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+
+.nav-items li a:hover {
+  background-color: gray;
+  border-radius:70%;
+}
+
+#menu-toggle:checked ~ .nav-items {
+  display: block;
+}
+.nav-items li a:active {
+  background-color: darkgray;
+}
+
+/*-----------Welcome section*/
+#welcome-section{
+  text-align: center;
+  font-family:Georgia;
+  font-weight:550;
+  max-width:800px;
+  border:1px solid green;
+  margin:auto;
+}
+#welcome-section h1{
+    text-decoration: none;
+}
+/*-----------Education*/
+#education{
+  display:flex;
+  flex-wrap:wrap;
+}
+#education a,.title,.x{
+  color:#0080FF;
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: 550;
+}
+
+#education h2{
+  margin-left:50px;
+}
+#education h3{
+  margin-left:50px;
+}
+.achievements{
+  border-left:1px solid green;
+  border-bottom:1px solid green;
+  padding-left:20px;
+  max-width:300px;
+  margin:50px;
+}
+.italic{
+  font-family:monospace;
+  font-size:16px;
+}
+.bold{
+  font-weight:700;
+}
+.popup {
+    width: 90%;
+    height: 80%;
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 3%;
+    padding: 20px;
+    background-color: #782614;
+    color: #FFFACD;
+    border: 1px solid #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 99;
+    overflow-y: auto;
+}
+.popup-toggle{
+    display:none;
+}
+.popup-toggle:checked + .popup {
+    display: block;
+}
+.x{
+    top: 0.5%;
+    right: 0.0%;
+    font-size:30px;
+    text-decoration: none;
+    width: 22px;
+    height:30px;
+    background-color:red;
+    color:black;
+    position: fixed;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+}
+/*-----------Projects*/
+.project-tile{
+    margin: 12px;
+    width:fit-content;
+} 
+#projects img,#personal-achievements img{
+    max-width: 100%;
+}
+/*-----------Personal Achivements*/
+#personal-achievements{
+    margin:0 3%;
+}
+/*-----------Contact*/
+.fa.fa-instagram {
+  color: transparent;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.fa-google {
+  background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.fa-facebook-square,.fa-linkedin{
+    color: blue !important;
+}
+#contact ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#contact li{
+    margin: 0 5%
+}
