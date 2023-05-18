@@ -110,6 +110,9 @@ header {
 #education h3{
   margin-left:50px;
 }
+.school{
+    color:purple !important;
+}
 .achievements{
   border-left:1px solid green;
   border-bottom:1px solid green;
@@ -148,13 +151,14 @@ header {
 .x{
     top: 0.5%;
     right: 0.0%;
-    font-size:30px;
+    font-size:28px;
     text-decoration: none;
-    width: 22px;
-    height:30px;
+    width: 19px;
+    height:29px;
     background-color:red;
     color:black;
     position: fixed;
+    font-family: sans-serif;
 }
 iframe{
     width: 100%;
@@ -199,3 +203,7 @@ iframe{
 #contact li{
     margin: 0 5%
 }
+label p{
+     width:fit-content;
+}
+
