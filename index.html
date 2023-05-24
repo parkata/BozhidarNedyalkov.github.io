@@ -1,166 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css" />
     <title>Bozhidar Ivanov Nedyalkov</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
-     <nav id="navbar">
-  <input type="checkbox" id="menu-toggle">
-  <label for="menu-toggle" class="nav-button">☰</label>
-
-  <ul class="nav-items">
-    <li><a href="#welcome-section" onclick="document.getElementById('menu-toggle').checked = false;">Welcome</a></li>
-    <li><a href="#education" onclick="document.getElementById('menu-toggle').checked = false;">Education</a></li>
-    <li><a href="#projects" onclick="document.getElementById('menu-toggle').checked = false;">Projects</a></li>
-    <li><a href="#personal-achievements" onclick="document.getElementById('menu-toggle').checked = false;">Personal Achievements</a></li>
-    <li><a href="#contact" onclick="document.getElementById('menu-toggle').checked = false;">Contact</a></li>
-  </ul>
-</nav>
-
+        <nav id="navbar">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="nav-button">☰</label>
+            <ul class="nav-items">
+                <li><a href="#welcome-section" onclick="document.getElementById('menu-toggle').checked = false;">Welcome</a></li>
+                <li><a href="#education" onclick="document.getElementById('menu-toggle').checked = false;">Education</a></li>
+                <li><a href="#projects" onclick="document.getElementById('menu-toggle').checked = false;">Projects</a></li>
+                <li><a href="#personal-achievements" onclick="document.getElementById('menu-toggle').checked = false;">Personal Achievements</a></li>
+                <li><a href="#contact" onclick="document.getElementById('menu-toggle').checked = false;">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-      <section id="welcome-section">
-        <h1>Hello, my name is Bozhidar Ivanov Nedyalkov, but people call me Boji.</h1>
-        <img src="" id="welcomeimg" alt="photo of me">
-        <p>I am a software developer and a sports coach</p>
-        <p>The reason I excell in these two areas is because I have a focus on efficiency, I am good at recognizing patterns and I find satisfaction in being the hardest worker in the room.</p>
-      </section>
-      <section id="education">
-        <h1>Education</h1>
-        <div id="high-school">
-          <h2>High School</h2>
-          <h3><a class="school" href="http://www.simeonradev.org/" target="_blank">Language School "Simeon Radev"</a></h3>
-          <div class="achievements">
-          <p>Studied 5 years of <span class="italic">Language School</span>, with profile: <span class="italic">English, Spanish, Mathematics</span></p>
-        <p><span class="bold"><span class="italic">Excellent</span> Diploma</span></p>
-        <p><span class="bold">90% grade</span> on <span class="italic">Exit Mathematics examination</span></p>
-         <label for="popup-toggle1"><p class="title">Diploma</p></label>
-    <input type="checkbox" id="popup-toggle1" class="popup-toggle">
-              <div class="popup"><label for="popup-toggle1"><p class="x">X</p></label><iframe src="certificates/Bozhidar%20Nedialkov%20-%20Diploma.pdf"></iframe>
-              </div></div></div>
-        <div id="uni-bg">
-          <h2>University in Bulgaria</h2>
-          <h3><a class="school" href="https://www.utp.bg/" target="_blank">University of Telecommunications and Posts</a></h3><div class="achievements">
-          <p>Studied 2 years of <span class="italic">Physics, Electronics, Programming and High Mathematics</span></p>      
-        <p><span class="bold"><span class="italic">Excellent</span> grade</span> in <span class="italic">Programming</span></p>
-        <p><span class="bold"><span class="italic">Very Good</span> grade</span> in <span class="italic">High Mathematics</span></p>
-        <label for="popup-toggle2"><p class="title">Grades</p></label>
-    <input type="checkbox" id="popup-toggle2" class="popup-toggle">
-            <div class="popup"><label for="popup-toggle2"><p class="x">X</p></label><iframe src="certificates/Bozhidar%20Nedialkov%20-%20College%20Academic%20Record.pdf"></iframe>
-              </div>
-        </div></div>
-        <div id="uni-dk">
-          <h2>University in Denmark</h2>
-          <h3><a class="school" href="https://en.via.dk/" target="_blank">VIA University College</a></h3><div class="achievements">
-          <p>Studied 2 years of <span class="italic">Java, Assembly and other programming languages, along with non-coding Engineering courses</span></p>
-          <p><span class="bold"><span class="italic">Very Good</span> grade</span> in <span class="italic">Java Programming</span></p>
-          <p><span class="bold"><span class="italic">Semi-finalist</span></span> in <span class="italic">Lego Robot Wars</span></p>
-          <label for="popup-toggle3"><p class="title">Grades</p></label>
-    <input type="checkbox" id="popup-toggle3" class="popup-toggle">
-            <div class="popup"><label for="popup-toggle3"><p class="x">X</p></label><iframe src="certificates/Grades_VIA.pdf"></iframe>
-              </div>
-        </div></div>
-        <div id="coursera">
-          <h2>Online Education</h2>
-          <h3><a class="school" href="https://www.coursera.org/" target="_blank">Coursera</a> in collaboration with <a class="school" href="https://duke.edu/" target="_blank">Duke University</a></h3><div class="achievements">
-          <p>Studied 5 months of <span class="italic"> Java Programming</span></p>
-          <p><span class="bold">Completion with <span class="italic">100% with Honors</span></span> in all included courses</p>
-          <label for="popup-toggle4"><p class="title">Certificate</p></label>
-    <input type="checkbox" id="popup-toggle4" class="popup-toggle">
-            
-            <div class="popup"><label for="popup-toggle4"><p class="x">X</p></label><iframe src="certificates/Coursera%2024Q24CBURUS6.pdf"></iframe><p><a href="https://coursera.org/verify/specialization/24Q24CBURUS6" target="_blank">Verification link</a></p>
-                 </div>
-                   </div>
-           
-        </div>
-        <div id="fcc">
-          <h2>Current</h2>
-          <h3><a class="school" href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a></h3><div class="achievements">
-          <p>Currently, I am following a <span class="italic">Full-Stack</span> specialization program</p>
-          <label for="popup-toggle5"><p class="title">Responsive Web Design</p></label>
-    <input type="checkbox" id="popup-toggle5" class="popup-toggle">
-            <div class="popup"><label for="popup-toggle5"><p class="x">X</p></label><iframe src="certificates/Responsive%20Web%20Design.pdf"></iframe><p><a href="https://freecodecamp.org/certification/fcc77ddb928-4ed0-466a-b9ec-a809d196feaa/responsive-web-design" target="_blank">Verification link</a></p>
-              </div>
-          <label for="popup-toggle6"><p class="title">Javascript Algorithms and Data Structures</p></label>
-    <input type="checkbox" id="popup-toggle6" class="popup-toggle">
-            <div class="popup"><label for="popup-toggle6"><p class="x">X</p></label><iframe src="certificates/Javascript%20Algorithms%20and%20Data%20Structures.pdf"></iframe>
-                <p><a href="https://freecodecamp.org/certification/fcc77ddb928-4ed0-466a-b9ec-a809d196feaa/javascript-algorithms-and-data-structures" target="_blank">Verification link</a></p>
-              </div>
-        </div></div>
-        <p class="outro">Along with acquiring theoretical knowledge, I have put my skills to the test in a number of projects.</p>
-      </section>
-      <section id="projects">
-        <h1>Projects</h1>
-          <ul>
-        <li><div class="project-tile"><label for="popup-toggle7"><p class="title">Lego Robot Wars</p></label>
-    <input type="checkbox" id="popup-toggle7" class="popup-toggle">
-            <div class="popup"><label for="popup-toggle7"><p class="x">X</p></label><p>In my first year of VIA University College in Horsens, Denmark, one of our group projects was to build and program a Lego robot to perform tricks and, eventually, face the other robots in a sumo-style battle. The experience taught us about working with sensors and microcontrollers. Here are the highlights:</p><img src="lego/18318223_1423552767709489_119228041_o.jpg" alt="Photo of our Lego Robot">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/xZzsuWUle8A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-               <iframe width="560" height="315" src="https://www.youtube.com/embed/uEJMmxRPOo8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZM-MQxIlN7M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div></div></li>
-         <li><div class="project-tile"><label for="popup-toggle12"><p class="title">Hotel Booking System</p></label>
-    <input type="checkbox" id="popup-toggle12" class="popup-toggle">
-            <div class="popup"><label for="popup-toggle12"><p class="x">X</p></label><p>Another one of my VIA projects. We had to create a booking system for a hotel. We were given the numbers and types of rooms and our objective was to create an administrative application, so they can keep track of their guests. It was the biggest project I had taken part in at the time and I learned a lot about planning and executing work in a team. Here are the use case diagram and the user guide for this project:</p>
-                <img src="hotel/UseCase.png" alt="Use case diagram"><iframe src="hotel/User-guide-for-the-program.pdf"></iframe></div></div></li>
-         <li><div class="project-tile"><label for="popup-toggle8"><p class="title">Text Encoding Application</p></label>
-    <input type="checkbox" id="popup-toggle8" class="popup-toggle">
-            <div class="popup"><label for="popup-toggle8"><p class="x">X</p></label><p>This application I made in relation to learning encoding and decoding algorithms with Duke University. It has a simple UI, but complex algorithm working behind it. I have only tested it with Ceaser Cypher decoding algorithms (since this is its base) and none have decoded it yet. Here is a visual representation of how it works:</p><img src="encoding/Encoding1.PNG"><img src="encoding/Encoding2.PNG"></div></div></li>
-         <li><div class="project-tile"><label for="popup-toggle9"><p class="title">Movie Recommendation System</p></label>
-    <input type="checkbox" id="popup-toggle9" class="popup-toggle">
-            <div class="popup"><label for="popup-toggle9"><p class="x">X</p></label><p>This was the last project for the "Java Programming" certification. The front end was provided, but for the back end I was only given a file of movies with their data. It was a peer-graded asignment and my project passed all the requirements. Here is a brief user guide:</p><iframe src="movies/MovieRec.pdf"></iframe></div></div></li>
-         <li><div class="project-tile"><label for="popup-toggle10"><p class="title">Image Cloaking Application</p></label>
-    <input type="checkbox" id="popup-toggle10" class="popup-toggle">
-            <div class="popup"><label for="popup-toggle10"><p class="x">X</p></label><p>I build this application for both desktop and android. It's main purpose is to be able to send hidden information through images. I had to learn a lot about image manipulation algorithms and specifically pixel manipulation. Here is the user guide for it:</p><iframe src="imageCloacking/ImageCloak.pdf"></iframe></div></div></li>
-         <li><div class="project-tile"><label for="popup-toggle13"><p class="title">Efficient Grocery List</p></label>
-    <input type="checkbox" id="popup-toggle13" class="popup-toggle">
-            <div class="popup"><label for="popup-toggle13"><p class="x">X</p></label><p>This is a small project I build for my household. It is for desktop and android. It allows us to walk in a straight line in the grocery store, saving us time from having to go back and forth multiple times. I did it when I first started learning React and it taught me how to change the view of a webpage, without having to refresh it.</p><iframe src="groceries/GrocerieApp.pdf"></iframe></div></div></li>
-              <li><div class="project-tile"><label for="popup-toggle14"><p class="title">Godsmack(Rock Band) Tribute Page</p></label>
-    <input type="checkbox" id="popup-toggle14" class="popup-toggle">
-            <div class="popup"><label for="popup-toggle14"><p class="x">X</p></label><p>My first web page when I was learning the depths of HTML and CSS.</p><iframe src="https://green-elsa-85.tiiny.site"></iframe></div></div></li>
-              <li><div class="project-tile"><label for="popup-toggle15"><p class="title">Training Program Page</p></label>
-    <input type="checkbox" id="popup-toggle15" class="popup-toggle">
-            <div class="popup"><label for="popup-toggle15"><p class="x">X</p></label><p>The landing page of the first product I'm selling. I trully enjoyed working on this one as I had an exact vision of what I wanted it to look like and I made it happen.</p><iframe src="https://emerald-robina-81.tiiny.site/"></iframe></div></div></li>
-        <p class="outro">While working on improving my professional skills, I also took part in some "extracurricular" activities.</p>
-              </ul>
-      </section>
-      <section id="personal-achievements"><h1>Personal Achievements</h1>
-      
-          <div class="achievement-tile"><label for="popup-toggle16"><p class="title">Theather</p></label>
-          <input type="checkbox" id="popup-toggle16" class="popup-toggle">
-          <div class="popup"><label for="popup-toggle16"><p class="x">X</p></label><img src="hobbies/Theater1.jpg"><img src="hobbies/Theater2.jpg"></div></div>
-          <p>At the end of High School, I participated in a Theater troupe, which eventually competed in and won several Prizes from <span class="italic">Kavarna Theater Festival</span></p>
-        <div class="achievement-tile"><label for="popup-toggle17"><p class="title">Powerlifting</p></label>
-          <input type="checkbox" id="popup-toggle17" class="popup-toggle">
-          <div class="popup"><label for="popup-toggle17"><p class="x">X</p></label><img src="hobbies/Theater1.jpg"><img src="hobbies/Theater2.jpg"></div></div>
-          <p>Being a <span class="italic">strength and conditioning</span> coach, I knew I had to lead by example, so I competed often and, in 2019, was able to be on par with the top-50 tested powerlifters in the world.</p>
-          <div class="achievement-tile"><label for="popup-toggle18"><p class="title">Sports Events</p></label>
-          <input type="checkbox" id="popup-toggle18" class="popup-toggle">
-          <div class="popup"><label for="popup-toggle18"><p class="x">X</p></label><img src="hobbies/FitnessComp1.jpg"><img src="hobbies/FitnessComp2.jpg"><img src="hobbies/FitnessComp3.jpg"><img src="hobbies/FitnessComp4.jpg"><img src="hobbies/FitnessComp5.JPG"></div></div>
-          <p>Coaching people to me also meant giving people the opportunity to be tested on their newly-acquired skills,therefore between the years of 2018 and 2022 I have been in the organization of a multitude of local-level sports competitions.</p>
-        <div class="achievement-tile"><div class="achievement-tile"><label for="popup-toggle19"><p class="title">Crossfit Level 1</p></label>
-          <input type="checkbox" id="popup-toggle19" class="popup-toggle">
-          <div class="popup"><label for="popup-toggle19"><p class="x">X</p></label>
-          <iframe src="hobbies/CrossfitCertificate.pdf"></iframe><img src="hobbies/CrossfitGroupPhoto.jpg">
-            </div></div>
-          <p>Having coached <span class="italic">strength and conditioning</span> and <span class="italic">kickboxing</span> for 6 years, in 2023 I finally decided to get formally educated.</p>
-          
-        </div>
-      </section>
+        <section id="welcome-section">
+            <h1>Hello, my name is Bozhidar Ivanov Nedyalkov, but people call me Boji.</h1> <img src="" id="welcomeimg" alt="photo of me">
+            <p>I am a software developer and a sports coach</p>
+            <p>The reason I excell in these two areas is because I have a focus on efficiency, I am good at recognizing patterns and I find satisfaction in being the hardest worker in the room.</p>
+        </section>
+        <section id="education">
+            <h1>Education</h1>
+            <div id="high-school">
+                <h2>High School</h2>
+                <h3><a class="school" href="http://www.simeonradev.org/" target="_blank">Language School "Simeon Radev"</a></h3>
+                <div class="achievements">
+                    <p>Studied 5 years of <span class="italic">Language School</span>, with profile: <span class="italic">English, Spanish, Mathematics</span></p>
+                    <p><span class="bold"><span class="italic">Excellent</span> Diploma</span>
+                    </p>
+                    <p><span class="bold">90% grade</span> on <span class="italic">Exit Mathematics examination</span></p>
+                    <label for="popup-toggle1">
+                        <p class="title">Diploma</p>
+                    </label>
+                    <input type="checkbox" id="popup-toggle1" class="popup-toggle">
+                    <div class="popup">
+                        <label for="popup-toggle1">
+                            <p class="x">X</p>
+                        </label>
+                        <iframe src="certificates/Bozhidar%20Nedialkov%20-%20Diploma.pdf"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div id="uni-bg">
+                <h2>University in Bulgaria</h2>
+                <h3><a class="school" href="https://www.utp.bg/" target="_blank">University of Telecommunications and Posts</a></h3>
+                <div class="achievements">
+                    <p>Studied 2 years of <span class="italic">Physics, Electronics, Programming and High Mathematics</span></p>
+                    <p><span class="bold"><span class="italic">Excellent</span> grade</span> in <span class="italic">Programming</span></p>
+                    <p><span class="bold"><span class="italic">Very Good</span> grade</span> in <span class="italic">High Mathematics</span></p>
+                    <label for="popup-toggle2">
+                        <p class="title">Grades</p>
+                    </label>
+                    <input type="checkbox" id="popup-toggle2" class="popup-toggle">
+                    <div class="popup">
+                        <label for="popup-toggle2">
+                            <p class="x">X</p>
+                        </label>
+                        <iframe src="certificates/Bozhidar%20Nedialkov%20-%20College%20Academic%20Record.pdf"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div id="uni-dk">
+                <h2>University in Denmark</h2>
+                <h3><a class="school" href="https://en.via.dk/" target="_blank">VIA University College</a></h3>
+                <div class="achievements">
+                    <p>Studied 2 years of <span class="italic">Java, Assembly and other programming languages, along with non-coding Engineering courses</span></p>
+                    <p><span class="bold"><span class="italic">Very Good</span> grade</span> in <span class="italic">Java Programming</span></p>
+                    <p><span class="bold"><span class="italic">Semi-finalist</span></span> in <span class="italic">Lego Robot Wars</span></p>
+                    <label for="popup-toggle3">
+                        <p class="title">Grades</p>
+                    </label>
+                    <input type="checkbox" id="popup-toggle3" class="popup-toggle">
+                    <div class="popup">
+                        <label for="popup-toggle3">
+                            <p class="x">X</p>
+                        </label>
+                        <iframe src="certificates/Grades_VIA.pdf"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div id="coursera">
+                <h2>Online Education</h2>
+                <h3><a class="school" href="https://www.coursera.org/" target="_blank">Coursera</a> in collaboration with <a class="school" href="https://duke.edu/" target="_blank">Duke University</a></h3>
+                <div class="achievements">
+                    <p>Studied 5 months of <span class="italic"> Java Programming</span></p>
+                    <p><span class="bold">Completion with <span class="italic">100% with Honors</span></span> in all included courses</p>
+                    <label for="popup-toggle4">
+                        <p class="title">Certificate</p>
+                    </label>
+                    <input type="checkbox" id="popup-toggle4" class="popup-toggle">
+                    <div class="popup">
+                        <label for="popup-toggle4">
+                            <p class="x">X</p>
+                        </label>
+                        <iframe src="certificates/Coursera%2024Q24CBURUS6.pdf"></iframe>
+                        <p><a href="https://coursera.org/verify/specialization/24Q24CBURUS6" target="_blank">Verification link</a></p>
+                    </div>
+                </div>
+            </div>
+            <div id="fcc">
+                <h2>Current</h2>
+                <h3><a class="school" href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a></h3>
+                <div class="achievements">
+                    <p>Currently, I am following a <span class="italic">Full-Stack</span> specialization program</p>
+                    <label for="popup-toggle5">
+                        <p class="title">Responsive Web Design</p>
+                    </label>
+                    <input type="checkbox" id="popup-toggle5" class="popup-toggle">
+                    <div class="popup">
+                        <label for="popup-toggle5">
+                            <p class="x">X</p>
+                        </label>
+                        <iframe src="certificates/Responsive%20Web%20Design.pdf"></iframe>
+                        <p><a href="https://freecodecamp.org/certification/fcc77ddb928-4ed0-466a-b9ec-a809d196feaa/responsive-web-design" target="_blank">Verification link</a></p>
+                    </div>
+                    <label for="popup-toggle6">
+                        <p class="title">Javascript Algorithms and Data Structures</p>
+                    </label>
+                    <input type="checkbox" id="popup-toggle6" class="popup-toggle">
+                    <div class="popup">
+                        <label for="popup-toggle6">
+                            <p class="x">X</p>
+                        </label>
+                        <iframe src="certificates/Javascript%20Algorithms%20and%20Data%20Structures.pdf"></iframe>
+                        <p><a href="https://freecodecamp.org/certification/fcc77ddb928-4ed0-466a-b9ec-a809d196feaa/javascript-algorithms-and-data-structures" target="_blank">Verification link</a></p>
+                    </div>
+                </div>
+            </div>
+            <p class="outro">Along with acquiring theoretical knowledge, I have put my skills to the test in a number of projects.</p>
+        </section>
+        <section id="projects">
+            <h1>Projects</h1>
+            <ul>
+                <li>
+                    <div class="project-tile">
+                        <label for="popup-toggle7">
+                            <p class="title">Lego Robot Wars</p>
+                        </label>
+                        <input type="checkbox" id="popup-toggle7" class="popup-toggle">
+                        <div class="popup">
+                            <label for="popup-toggle7">
+                                <p class="x">X</p>
+                            </label>
+                            <p>In my first year of VIA University College in Horsens, Denmark, one of our group projects was to build and program a Lego robot to perform tricks and, eventually, face the other robots in a sumo-style battle. The experience taught us about working with sensors and microcontrollers. Here are the highlights:</p><img src="lego/18318223_1423552767709489_119228041_o.jpg" alt="Photo of our Lego Robot">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/xZzsuWUle8A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/uEJMmxRPOo8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZM-MQxIlN7M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="project-tile">
+                        <label for="popup-toggle12">
+                            <p class="title">Hotel Booking System</p>
+                        </label>
+                        <input type="checkbox" id="popup-toggle12" class="popup-toggle">
+                        <div class="popup">
+                            <label for="popup-toggle12">
+                                <p class="x">X</p>
+                            </label>
+                            <p>Another one of my VIA projects. We had to create a booking system for a hotel. We were given the numbers and types of rooms and our objective was to create an administrative application, so they can keep track of their guests. It was the biggest project I had taken part in at the time and I learned a lot about planning and executing work in a team. Here are the use case diagram and the user guide for this project:</p> <img src="hotel/UseCase.png" alt="Use case diagram">
+                            <iframe src="hotel/User-guide-for-the-program.pdf"></iframe>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="project-tile">
+                        <label for="popup-toggle8">
+                            <p class="title">Text Encoding Application</p>
+                        </label>
+                        <input type="checkbox" id="popup-toggle8" class="popup-toggle">
+                        <div class="popup">
+                            <label for="popup-toggle8">
+                                <p class="x">X</p>
+                            </label>
+                            <p>This application I made in relation to learning encoding and decoding algorithms with Duke University. It has a simple UI, but complex algorithm working behind it. I have only tested it with Ceaser Cypher decoding algorithms (since this is its base) and none have decoded it yet. Here is a visual representation of how it works:</p><img src="encoding/Encoding1.PNG"><img src="encoding/Encoding2.PNG"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="project-tile">
+                        <label for="popup-toggle9">
+                            <p class="title">Movie Recommendation System</p>
+                        </label>
+                        <input type="checkbox" id="popup-toggle9" class="popup-toggle">
+                        <div class="popup">
+                            <label for="popup-toggle9">
+                                <p class="x">X</p>
+                            </label>
+                            <p>This was the last project for the "Java Programming" certification. The front end was provided, but for the back end I was only given a file of movies with their data. It was a peer-graded asignment and my project passed all the requirements. Here is a brief user guide:</p>
+                            <iframe src="movies/MovieRec.pdf"></iframe>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="project-tile">
+                        <label for="popup-toggle10">
+                            <p class="title">Image Cloaking Application</p>
+                        </label>
+                        <input type="checkbox" id="popup-toggle10" class="popup-toggle">
+                        <div class="popup">
+                            <label for="popup-toggle10">
+                                <p class="x">X</p>
+                            </label>
+                            <p>I build this application for both desktop and android. It's main purpose is to be able to send hidden information through images. I had to learn a lot about image manipulation algorithms and specifically pixel manipulation. Here is the user guide for it:</p>
+                            <iframe src="imageCloacking/ImageCloak.pdf"></iframe>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="project-tile">
+                        <label for="popup-toggle13">
+                            <p class="title">Efficient Grocery List</p>
+                        </label>
+                        <input type="checkbox" id="popup-toggle13" class="popup-toggle">
+                        <div class="popup">
+                            <label for="popup-toggle13">
+                                <p class="x">X</p>
+                            </label>
+                            <p>This is a small project I build for my household. It is for desktop and android. It allows us to walk in a straight line in the grocery store, saving us time from having to go back and forth multiple times. I did it when I first started learning React and it taught me how to change the view of a webpage, without having to refresh it.</p>
+                            <iframe src="groceries/GrocerieApp.pdf"></iframe>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="project-tile">
+                        <label for="popup-toggle14">
+                            <p class="title">Godsmack(Rock Band) Tribute Page</p>
+                        </label>
+                        <input type="checkbox" id="popup-toggle14" class="popup-toggle">
+                        <div class="popup">
+                            <label for="popup-toggle14">
+                                <p class="x">X</p>
+                            </label>
+                            <p>My first web page when I was learning the depths of HTML and CSS.</p>
+                            <iframe src="https://green-elsa-85.tiiny.site"></iframe>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="project-tile">
+                        <label for="popup-toggle15">
+                            <p class="title">Training Program Page</p>
+                        </label>
+                        <input type="checkbox" id="popup-toggle15" class="popup-toggle">
+                        <div class="popup">
+                            <label for="popup-toggle15">
+                                <p class="x">X</p>
+                            </label>
+                            <p>The landing page of the first product I'm selling. I trully enjoyed working on this one as I had an exact vision of what I wanted it to look like and I made it happen.</p>
+                            <iframe src="https://emerald-robina-81.tiiny.site/"></iframe>
+                        </div>
+                    </div>
+                </li>
+                <p class="outro">While working on improving my professional skills, I also took part in some "extracurricular" activities.</p>
+            </ul>
+        </section>
+        <section id="personal-achievements">
+            <h1>Personal Achievements</h1>
+            <div class="achievement-tile">
+                <label for="popup-toggle16">
+                    <p class="title">Theather</p>
+                </label>
+                <input type="checkbox" id="popup-toggle16" class="popup-toggle">
+                <div class="popup">
+                    <label for="popup-toggle16">
+                        <p class="x">X</p>
+                    </label><img src="hobbies/Theater1.jpg"><img src="hobbies/Theater2.jpg"></div>
+            </div>
+            <p>At the end of High School, I participated in a Theater troupe, which eventually competed in and won several Prizes from <span class="italic">Kavarna Theater Festival</span></p>
+            <div class="achievement-tile">
+                <label for="popup-toggle17">
+                    <p class="title">Powerlifting</p>
+                </label>
+                <input type="checkbox" id="popup-toggle17" class="popup-toggle">
+                <div class="popup">
+                    <label for="popup-toggle17">
+                        <p class="x">X</p>
+                    </label><img src="hobbies/Theater1.jpg"><img src="hobbies/Theater2.jpg"></div>
+            </div>
+            <p>Being a <span class="italic">strength and conditioning</span> coach, I knew I had to lead by example, so I competed often and, in 2019, was able to be on par with the top-50 tested powerlifters in the world.</p>
+            <div class="achievement-tile">
+                <label for="popup-toggle18">
+                    <p class="title">Sports Events</p>
+                </label>
+                <input type="checkbox" id="popup-toggle18" class="popup-toggle">
+                <div class="popup">
+                    <label for="popup-toggle18">
+                        <p class="x">X</p>
+                    </label><img src="hobbies/FitnessComp1.jpg"><img src="hobbies/FitnessComp2.jpg"><img src="hobbies/FitnessComp3.jpg"><img src="hobbies/FitnessComp4.jpg"><img src="hobbies/FitnessComp5.JPG"></div>
+            </div>
+            <p>Coaching people to me also meant giving people the opportunity to be tested on their newly-acquired skills,therefore between the years of 2018 and 2022 I have been in the organization of a multitude of local-level sports competitions.</p>
+            <div class="achievement-tile">
+                <div class="achievement-tile">
+                    <label for="popup-toggle19">
+                        <p class="title">Crossfit Level 1</p>
+                    </label>
+                    <input type="checkbox" id="popup-toggle19" class="popup-toggle">
+                    <div class="popup">
+                        <label for="popup-toggle19">
+                            <p class="x">X</p>
+                        </label>
+                        <iframe src="hobbies/CrossfitCertificate.pdf"></iframe><img src="hobbies/CrossfitGroupPhoto.jpg"> </div>
+                </div>
+                <p>Having coached <span class="italic">strength and conditioning</span> and <span class="italic">kickboxing</span> for 6 years, in 2023 I finally decided to get formally educated.</p>
+            </div>
+        </section>
     </main>
     <footer id="contact">
         <h1>Contact Me</h1>
-  <ul>
-    <li><a href="https://www.facebook.com/profile.php?id=100001643386248" target="_blank"><i class="fa fa-facebook-square fa-5x"></i></a></li>
-    <li><a href="https://www.instagram.com/coachboji/" target="_blank"><i class="fa fa-instagram fa-5x" target="_blank"></i></a></li>
-    <li><a href="https://www.linkedin.com/in/bozhidar-nedyalkov-70b51a170/" target="_blank"><i class="fa fa-linkedin fa-5x"></i></a></li>
-    <li><a href="mailto:parkata95@gmail.com"><i class="fa fa-google fa-5x" target="_blank"></i></a></li>
-  </ul>
-</footer>
-  </body>
+        <ul>
+            <li><a href="https://www.facebook.com/profile.php?id=100001643386248" target="_blank"><i class="fa fa-facebook-square fa-5x"></i></a></li>
+            <li><a href="https://www.instagram.com/coachboji/" target="_blank"><i class="fa fa-instagram fa-5x" target="_blank"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/bozhidar-nedyalkov-70b51a170/" target="_blank"><i class="fa fa-linkedin fa-5x"></i></a></li>
+            <li><a href="mailto:parkata95@gmail.com"><i class="fa fa-google fa-5x" target="_blank"></i></a></li>
+        </ul>
+    </footer>
+</body>
+
 </html>
