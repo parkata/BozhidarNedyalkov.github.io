@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css" />
     <title>Bozhidar Ivanov Nedyalkov</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.4/pdfobject.min.js"></script>
+
 </head>
 
 <body>
@@ -28,6 +30,10 @@
             <h1>Hello, my name is Bozhidar Ivanov Nedyalkov, but people call me Boji.</h1> <img src="" id="welcomeimg" alt="photo of me">
             <p>I am a software developer and a sports coach</p>
             <p>The reason I excell in these two areas is because I have a focus on efficiency, I am good at recognizing patterns and I find satisfaction in being the hardest worker in the room.</p>
+            <div id="pdf-container"></div>
+<script>
+  PDFObject.embed("https://github.com/parkata/parkata.github.io/blob/main/certificates/Bozhidar%20Nedialkov%20-%20College%20Academic%20Record.pdf", "#pdf-container");
+</script>
         </section>
         <section id="education">
             <h1>Education</h1>
@@ -47,7 +53,7 @@
                         <label for="popup-toggle1">
                             <p class="x">X</p>
                         </label>
-                        <object type="application/pdf" src="certificates/Bozhidar%20Nedialkov%20-%20Diploma.pdf"></object>
+                        <iframe src="certificates/Bozhidar%20Nedialkov%20-%20Diploma.pdf"></iframe>
                     </div>
                 </div>
             </div>
