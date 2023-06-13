@@ -176,7 +176,7 @@ header {
 }
 
 .x {
-    top: 0.5%;
+    top: 0.7%;
     right: 0;
     font-size: 28px;
     text-decoration: none;
@@ -188,7 +188,7 @@ header {
     font-family: sans-serif;
 }
 
-iframe {
+iframe,embed {
     width: 100%;
     height: 100%;
 }
