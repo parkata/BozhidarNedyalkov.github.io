@@ -9,7 +9,7 @@ h1 {
     text-align: center;
     text-decoration: underline;
     text-decoration-color: green;
-    font-size:calc(20px + 1.5vw);
+    font-size: calc(20px + 1.5vw);
     margin-bottom: 50px;
     margin-top: 50px;
 }
@@ -19,12 +19,12 @@ h1 {
 
 header {
     position: fixed;
-    top: 20px;
+    top: 0.6em;
     right: 10px;
+    font-size: 2.3em;
     color: black;
     font-family: 'Exo 2', sans-serif;
-    font-size: 2.0em;
-    height: 10px;
+    
 }
 
 #navbar {
@@ -34,6 +34,7 @@ header {
     justify-content: space-between;
     align-items: center;
     border-radius: 30%;
+    height: 1.3em;
 }
 
 #navbar:hover {
@@ -47,6 +48,7 @@ header {
 
 .nav-button {
     cursor: pointer;
+    transform: translateY(7%);
 }
 
 #menu-toggle {
@@ -147,6 +149,7 @@ header {
 .italic {
     font-family: monospace;
     font-size: 16px;
+    color: orangered;
 }
 
 .bold {
@@ -178,25 +181,40 @@ header {
 }
 
 .x {
-    top: -0.6em;
+    top: 0.4em;
     right: 10px;
-    font-size: 2.7em;
+    font-size: 3.1em;
     height: 1.1em;
     text-decoration: none;
     background-color: red;
     color: black;
     position: fixed;
     font-family: sans-serif;
+    border-radius:10%;
+    display: flex;
+  align-items: center;
+  justify-content: center;
 }
- #pdf-container {
-      width: 100%;
-      height: 100%;
-    }
-iframe,object,embed {
-    width: 100% !important;
+
+
+#pdf-container {
+    width: 100%;
     height: 100%;
 }
 
+iframe,
+object,
+embed {
+    width: 100% !important;
+    height: 100%;
+}
+.outro{
+    width: auto;
+      display: flex;
+  align-items: center;
+  justify-content: center;
+    margin:0 1em;
+}
 
 /*-----------Projects*/
 
