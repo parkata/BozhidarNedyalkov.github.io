@@ -109,6 +109,11 @@ header {
     text-decoration: none;
 }
 
+#welcomeimg{
+    max-width: 80%;
+    margin-bottom: 20px;
+    max-width: 400px;
+}
 
 /*-----------Education*/
 
