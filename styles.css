@@ -232,7 +232,9 @@ embed {
 #personal-achievements img {
     max-width: 100%;
 }
-
+img{
+    margin-bottom: 2%;
+}
 
 /*-----------Personal Achivements*/
 
